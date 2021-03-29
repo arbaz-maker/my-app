@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "13929fe0-2f99-4b11-a5cf-c9cf87d23973"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -27,10 +30,14 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": [              
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
-            ],
-            "scripts": []
+                         ],            
+                         "scripts": [
+                                     "./node_modules/jquery/dist/jquery.js",              
+                                     "./node_modules/bootstrap/dist/js/bootstrap.js"            
+                                     ]
           },
           "configurations": {
             "production": {
@@ -90,10 +97,14 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": [              
+              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
-            ],
-            "scripts": []
+                         ],            
+                         "scripts": [
+                                     "./node_modules/jquery/dist/jquery.js",              
+                                     "./node_modules/bootstrap/dist/js/bootstrap.js"            
+                                     ]
           }
         },
         "lint": {
